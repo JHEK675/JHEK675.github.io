@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+      - "25575:25575"
+    environment:
+      - APP_ENV=development
+      - APP_DEBUG=true
+      - LOG_LEVEL=INFO
+    volumes:
+      - .:/app
+      - /app/__pycache__
+    command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+    networks:
+      - minecraft-network
+
+  # Optional: test Minecraft server for integration testing
+  minecraft-test:
+    image: itzg/minecraft-server:latest
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      DIFFICULTY: "easy"
+      MODE: "creative"
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "test-password"
+      RCON_PORT: "25575"
+    volumes:
+      - minecraft-data:/data
+    networks:
+      - minecraft-network
+    profiles:
+      - test
+
+networks:
+  minecraft-network:
+    driver: bridge
+
+volumes:
+  minecraft-data:

@@ -1,6 +1,6 @@
 # Hoszie | JHEK675.GitHub.io 
 
-Student📚 | Builder🛠 | Future Tech Entrepreneur📡 | DevOps Learner 
+Student📚 | Builder🛠 | Technician📡 | DevOps Learner | 
 
 # 💫 About Me:
 🎓 Certified Technician in Telecommunication Systems<br>--> Electronic Communication🛠<br>--> Communication Systems and Digital Networks📨<br>--> Radio📡

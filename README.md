@@ -25,6 +25,8 @@ Focused on building practical skills in DevOps, automation, and infrastructure d
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
+<a href="https://app.daily.dev/jhekproperties"><img src="https://api.daily.dev/devcards/v2/SgFxS4Cmqxbw4peffFrVL.png?type=wide&r=rzk" width="652" alt="JHEK Properties's Dev Card"/></a>
+
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=JHEK675&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
